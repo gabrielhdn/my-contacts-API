@@ -1,4 +1,5 @@
 const { Client } = require('pg');
+require('dotenv').config();
 
 const client = new Client({
   host: process.env.HOST,
@@ -7,6 +8,8 @@ const client = new Client({
   password: process.env.PW,
   database: 'mycontacts',
 });
+
+console.log('HOST: ', process.env.HOST);
 
 client.connect();
 
