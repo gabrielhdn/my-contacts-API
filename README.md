@@ -1,6 +1,9 @@
 # MyContacts - API
 
-O back-end deste repositório é necessário para rodar o front-end de [MyContacts](https://github.com/gabrielhdn/my-contacts) adequadamente. Construído com Node, Express e PostgreSQL.
+O back-end deste repositório é necessário para rodar o MyContacts adequadamente. Construído com Node, Express e PostgreSQL.
+
+[Clique](https://github.com/gabrielhdn/my-contacts) para acessar o código do front-end.
+[Clique](https://gabrielhdn.github.io/my-contacts/) para acessar o deploy da aplicação.
 
 ## Executando o projeto
 
