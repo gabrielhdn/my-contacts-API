@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  pg:
+    image: postgres:latest
+    container_name: pg
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${USER}
+      POSTGRES_PASSWORD: ${PW}
+    ports:
+      - "${PORT}:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+    networks:
+      - my-network
+
+volumes:
+  pg_data:
+
+networks:
+  my-network:
+    driver: bridge
